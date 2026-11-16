@@ -128,7 +128,7 @@ gh repo create agent --private --source=. --remote=origin --push
 
 ## 阶段验收
 
-- [ ] `ai_agent` Conda 环境使用 Python 3.11+，依赖安装完成。
+- [x] `ai_agent` Conda 环境使用 Python 3.11.18，八项依赖均已安装、从环境内导入，`pip check` 通过。
 - [ ] 执行 `python hello_llm.py`，终端打印真实模型回复。
 - [ ] GitHub 仓库创建并推送成功。
 - [x] 项目骨架和 README 初稿已提供。
@@ -136,3 +136,5 @@ gh repo create agent --private --source=. --remote=origin --push
 - [x] 已写下：Agent 最小循环是决策→执行工具→观察→再决策。
 
 环境安装和真实 API 调用是独立的验收项。没有有效 Key 或 GitHub 授权时，对应项保持未完成。
+
+2026-11-16 本机验证：Python 3.11.18；八项依赖均从 `ai_agent` 环境导入；`python -m pip check` 通过。已使用本地 Key 发出真实 API 请求，但服务返回 HTTP 402；按 [DeepSeek 错误码说明](https://api-docs.deepseek.com/quick_start/error_codes)，该状态表示余额不足。用户选择暂缓模型验收；充值或更换可用 API 配置后，应重新运行普通回复和 Tool Calling 检查。
