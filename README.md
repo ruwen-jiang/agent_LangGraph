@@ -130,7 +130,7 @@ gh repo create agent --private --source=. --remote=origin --push
 
 - [x] `ai_agent` Conda 环境使用 Python 3.11.18，八项依赖均已安装、从环境内导入，`pip check` 通过。
 - [ ] 执行 `python hello_llm.py`，终端打印真实模型回复。
-- [ ] GitHub 仓库创建并推送成功。
+- [x] GitHub 仓库 [ruwen-jiang/agent_LangGraph](https://github.com/ruwen-jiang/agent_LangGraph) 已创建，项目已推送至 `main`。
 - [x] 项目骨架和 README 初稿已提供。
 - [x] 本地 `.env` 被忽略，提交中仅保留 `.env.example` 模板。
 - [x] 已写下：Agent 最小循环是决策→执行工具→观察→再决策。
